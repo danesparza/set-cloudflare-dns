@@ -15,7 +15,7 @@ Verbose logging can be enabled with `-v`.
 ## Building
 
 ```
-go build
+go build ./cmd/set-cloudflare-dns
 ```
 
 ## Running tests
