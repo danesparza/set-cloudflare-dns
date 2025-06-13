@@ -9,7 +9,7 @@ import (
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 
-	"github.com/example/set-cloudflare-dns/dns"
+	"github.com/danesparza/set-cloudflare-dns/dns"
 )
 
 func main() {

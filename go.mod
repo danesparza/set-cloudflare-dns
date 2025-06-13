@@ -1,4 +1,4 @@
-module github.com/example/set-cloudflare-dns
+module github.com/danesparza/set-cloudflare-dns
 
 go 1.23.8
 
