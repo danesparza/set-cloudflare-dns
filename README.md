@@ -1,2 +1,2 @@
 # set-cloudflare-dns
-Set DNS information for a cloudflare based host
+A simple command line tool built in go.  The tool sets dns information for a host using cloudflare credentials
