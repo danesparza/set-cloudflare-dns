@@ -30,7 +30,7 @@ RUN echo "Build Number: $buildNum"
 RUN echo "Commit SHA: $circleSha"
 
 # Build the Go app for the correct architecture
-RUN CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH go build -a -ldflags "-X ${packagePath}/version.BuildNumber=${buildNum} -X ${packagePath}/version.CommitID=${circleSha} -X '${packagePath}/version.Prerelease=-'" -installsuffix cgo -o set-cloudflare-dns ./
+RUN CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH go build -a -ldflags "-X ${packagePath}/version.BuildNumber=${buildNum} -X ${packagePath}/version.CommitID=${circleSha} -X '${packagePath}/version.Prerelease=-'" -installsuffix cgo -o set-cloudflare-dns ./cmd/set-cloudflare-dns
 
 ######## Start a new stage #######
 FROM --platform=$TARGETPLATFORM alpine:latest
