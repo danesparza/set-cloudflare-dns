@@ -1,6 +1,6 @@
 # Dockerfile References: https://docs.docker.com/engine/reference/builder/
 # Start from the latest golang base image
-FROM --platform=$BUILDPLATFORM golang:1.24.0 as builder
+FROM --platform=$BUILDPLATFORM golang:1.24.0 AS builder
 
 ARG packagePath
 ARG buildNum
@@ -40,5 +40,5 @@ RUN apk --no-cache add ca-certificates tzdata
 WORKDIR /root/
 
 # Copy the Pre-built binary file from the previous stage
-COPY --from=build /app/set-cloudflare-dns /usr/local/bin/set-cloudflare-dns
+COPY --from=builder /app/set-cloudflare-dns /usr/local/bin/set-cloudflare-dns
 ENTRYPOINT ["set-cloudflare-dns"]
