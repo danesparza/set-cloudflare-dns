@@ -1,6 +1,6 @@
 # Dockerfile References: https://docs.docker.com/engine/reference/builder/
 # Start from the latest golang base image
-FROM --platform=$BUILDPLATFORM golang:1.24.0 AS builder
+FROM --platform=$BUILDPLATFORM golang:1.24.4 AS builder
 
 ARG packagePath
 ARG buildNum
