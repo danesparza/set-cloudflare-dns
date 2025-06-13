@@ -42,17 +42,4 @@ docker run --rm -e CF_API_TOKEN=<api-token> \
   -content 1.2.3.4 -ttl 120
 ```
 
-## GitHub Actions
-
-The included workflow builds and tests the project and, on pushes to `main`, publishes a Docker image to Docker Hub. The workflow expects the following secrets:
-
-- `DOCKERHUB_USER`
-- `DOCKERHUB_PASS`
-
-## A Haiku
-
-Cloudflare records bloom
-Crafted with ChatGPT Codex
-Automation flows
-
 
