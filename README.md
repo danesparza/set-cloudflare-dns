@@ -12,18 +12,6 @@ Arguments can also be provided via flags. The API token may be passed with the `
 
 Verbose logging can be enabled with `-v`.
 
-## Building
-
-```
-go build ./cmd/set-cloudflare-dns
-```
-
-## Running tests
-
-```
-go test ./...
-```
-
 ## Docker
 Pass the required flags as arguments and provide your API token either
 with `-token` or the `CF_API_TOKEN` environment variable:
