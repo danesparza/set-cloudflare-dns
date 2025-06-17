@@ -38,7 +38,7 @@ with `-token` or the `CF_API_TOKEN` environment variable:
 
 ```bash
 docker run --rm -e CF_API_TOKEN=<api-token> \
-  set-cloudflare-dns -zone example.com -name host.example.com -type A \
+  danesparza/set-cloudflare-dns -zone example.com -name host.example.com -type A \
   -content 1.2.3.4 -ttl 120
 ```
 
