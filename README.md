@@ -10,6 +10,10 @@ set-cloudflare-dns -zone example.com -name host.example.com -type A -content 1.2
 
 Arguments can also be provided via flags. The API token may be passed with the `-token` flag or via the `CF_API_TOKEN` environment variable.
 
+`-type` defaults to `A`
+
+`-ttl` defaults to `1` (which in Cloudflare is 'automatic')
+
 Verbose logging can be enabled with `-v`.
 
 ## Docker
