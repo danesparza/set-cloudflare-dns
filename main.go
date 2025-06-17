@@ -43,5 +43,5 @@ func main() {
 		log.Fatal().Err(err).Msg("failed to set dns record")
 	}
 
-	log.Info().Msg("dns record created")
+	log.Info().Str("record", *recordName).Str("content", *content).Msg("dns record set to content")
 }
