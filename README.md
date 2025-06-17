@@ -25,15 +25,7 @@ go test ./...
 ```
 
 ## Docker
-
-A multi-stage `Dockerfile` is provided to build a minimal image:
-
-```
-docker build -t set-cloudflare-dns .
-```
-
-Once built (or after pulling the published image) you can run the tool via
-Docker. Pass the required flags as arguments and provide your API token either
+Pass the required flags as arguments and provide your API token either
 with `-token` or the `CF_API_TOKEN` environment variable:
 
 ```bash
