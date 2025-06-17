@@ -1,6 +1,6 @@
 # set-cloudflare-dns
 
-A simple command line tool written in Go for creating DNS records in Cloudflare.
+A simple command line tool written in Go for creating or modifying DNS records in Cloudflare.
 
 ## Usage
 
